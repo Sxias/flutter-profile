@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MBorder extends StatelessWidget {
-  const MBorder({
-    super.key,
-  });
+/**
+ * Created By Sxias, 2025. 05. 27
+ * email : a32176740@gmail.com
+ * tip : 경계선 양식
+ */
 
+class MBorder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

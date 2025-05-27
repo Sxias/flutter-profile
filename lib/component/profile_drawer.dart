@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ProfileDrawer extends StatelessWidget {
-  const ProfileDrawer({
-    super.key,
-  });
+/**
+ * Created By Sxias, 2025. 05. 27
+ * email : a32176740@gmail.com
+ * tip : 메뉴 클릭 시 추가 화면을 표시
+ */
 
+class ProfileDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(width: 200, height: double.infinity, color: Colors.blueAccent);
+    return Container(width: 300, color: Colors.blueAccent);
   }
 }

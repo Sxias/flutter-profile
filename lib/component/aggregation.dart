@@ -2,21 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:profile_app/component/count.dart';
 import 'package:profile_app/component/m_border.dart';
 
-class Aggregation extends StatelessWidget {
-  const Aggregation({
-    super.key,
-  });
+/**
+ * Created By Sxias, 2025. 05. 27
+ * email : a32176740@gmail.com
+ * tip : 게시글, 좋아요, 공유 갯수 카운팅
+ */
 
+class Aggregation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Count(),
+        Count(50, "Posts"),
         MBorder(),
-        Count(),
+        Count(10, "Likes"),
         MBorder(),
-        Count(),
+        Count(3, "Share"),
       ],
     );
   }
