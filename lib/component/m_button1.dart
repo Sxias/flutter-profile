@@ -1,24 +1,27 @@
 import 'package:flutter/material.dart';
 
-class MButton extends StatelessWidget {
-  const MButton({
-    super.key,
-  });
+/**
+ * Created By Sxias, 2025. 05. 27
+ * email : a32176740@gmail.com
+ * tip : Follow 버튼 (Primary)
+ */
 
+class MButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.center,
-      width: 150,
-      height: 45,
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.black38),
-        borderRadius: BorderRadius.circular(10),
-        color: Colors.blueAccent,
+    return ElevatedButton(
+      onPressed: () {},
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Colors.blueAccent,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       ),
-      child: Text(
-        "Follow",
-        style: TextStyle(color: Colors.white),
+      child: Container(
+        width: 120,
+        height: 45,
+        child: Align(
+          alignment: Alignment(0, 0), // center
+          child: Text("Follow", style: TextStyle(color: Colors.white)),
+        ),
       ),
     );
   }
